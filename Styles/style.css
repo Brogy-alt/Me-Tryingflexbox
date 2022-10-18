@@ -1,0 +1,42 @@
+*,
+*::after *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* main {
+    width: 100vw;
+    height: 100vh;
+} */
+.container {
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
+    box-shadow: .5vw .5vw .3vw rgba greenyellow;
+
+}
+/* creates box with background color */
+.item {
+    /* margin: auto; */
+    width: 300px;
+    height: 260px;
+    background-color: rgb(191, 89, 229);
+    
+}
+/* order of things */
+.item:nth-of-type(2) {
+    order: 4;
+}
+    
+.item:nth-of-type(4) {
+    order: 2;
+}
+
+.item:nth-child(even){
+    background-color: rgb(58, 231, 210);
+}
+
+
+
